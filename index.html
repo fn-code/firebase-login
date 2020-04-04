@@ -73,7 +73,19 @@
         $(function () {
             console.log("hello apps");
 
-            
+            var firebaseConfig = {
+                apiKey: "AIzaSyBpT1kC3IBiolFPpZDiZqBJvqDZkZhQXAQ",
+                authDomain: "barber-47624.firebaseapp.com",
+                databaseURL: "https://barber-47624.firebaseio.com",
+                projectId: "barber-47624",
+                storageBucket: "barber-47624.appspot.com",
+                messagingSenderId: "509648220343",
+                appId: "1:509648220343:web:fe5c8daf03e2fa27835d32",
+                measurementId: "G-4J7J5PLQV6"
+            };
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+            firebase.analytics();
 
             var db = firebase.database();
 
